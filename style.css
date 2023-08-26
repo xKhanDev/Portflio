@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-size: 10px;
+}
+html {
+    scroll-behavior: smooth;
+  }  
+
+/* main container */
+.container{
+    margin: 0px auto;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-sizing: border-box;
+    width: 90%;
+}
+.blue {
+    color: blue;
+}
+.bg-blue{
+    color: white;
+    background-color: blue;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Navigation bar */
+nav{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    height: 80px;
+    border-bottom:1px solid black ;
+}
+
+/* logo */
+.container .logo{
+    width: 30%;
+    position: relative;
+    top: 15%;
+    left: 1%;
+    font-size: 4rem;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.container nav ul{
+    display: inline-flex;
+    height: 3rem;
+    align-items: center;
+    position: relative;
+    top: 35%;
+    left: 20%;
+}
+.container ul li{
+    display: inline-block;
+}
+.container ul li a{
+    margin-left: 3rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+/* Hover on manu */
+nav ul li a:hover{
+    padding: 7px 10px;
+    border-radius: 10px;
+    box-shadow: .1px .1px 8px 2px blue;
+}
+
+/* naviagtion button */
+.hire-btn{
+    display: inline-block;
+    cursor: pointer;
+    width: 10rem;
+    height: 5rem;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.first-section{
+    box-sizing: border-box;
+    width: 100%;
+}
+.mainImg img{
+    float: right;
+    width: 25rem;
+    height: auto;
+    margin:-2rem 6rem 0rem 0rem;
+    animation: mainImg 2s ease-in-out infinite;
+}
+@keyframes mainImg{
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px); /* Adjust this value to control the bounce height */
+      }
+}
+.paras{
+    margin: 20rem 0rem 0rem 5rem;
+    width: 50%;
+}
+.paras .para1{
+    font-size: 3rem;
+}
+.para1 span{
+    font-weight: 700;
+    font-size: 5rem;
+}
+.paras p{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.buttons{
+    margin-top: 6rem;
+}
+.buttons .btn1{
+    cursor: pointer;
+    padding:10px;
+}
+.buttons .btn2{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2rem;
+    margin-left: 2rem;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* social icons */
+.social-icons{
+    position: absolute;
+    right: 12%;
+    bottom:20%;
+}
+.social-icons a i{
+    font-size: 2.5rem;
+}
+.social-icons a{
+    /* color: white; */
+    display: inline-flex;
+    width: 4rem;
+    height: 4rem;
+    border:none ;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right:1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* social logos coloring */
+.social-icons a i:hover{
+    font-size: 2rem;
+}
+.social-icons a:hover{
+    font-size: 2rem;
+}
+.social-icons #fb:hover{
+    font-size: 2rem;
+    color: #3b5998;
+    box-shadow: 0 4px 8px 0 rgba(28, 3, 255, 0.2), 0 6px 20px 0 rgba(8, 4, 252, 0.19);
+}
+.social-icons #twt:hover{
+    font-size: 2rem;
+    color: #00acee;
+    box-shadow: 0 4px 8px 0 rgba(3, 226, 255, 0.2), 0 6px 20px 0 rgba(2, 183, 255, 0.19);
+}
+.social-icons #insta:hover{
+    font-size: 2rem;
+    color:#d62976;
+    box-shadow: 0 4px 8px 0 rgba(255, 1, 170, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.social-icons #yt:hover{
+    font-size: 2rem;
+    color:red;
+    box-shadow: 0 4px 8px 0 rgba(252, 2, 2, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19);
+}
+
+/* Main contanier 2 buttons */
+.container #h-btn:hover{
+    padding: 9px;
+    transform: scale(0.9) rotate(3deg);
+    box-shadow: 0 4px 8px 0 rgba(28, 3, 255, 0.2), 0 6px 20px 0 rgba(54, 134, 255, 0.19);
+}
+.about{
+    border: 3px solid red;
+    display: flex;
+    margin-top:15rem;
+    width: 100%;
+    height: 95vh;
+    background-color:lightgray;
+    border: none;
+    border-radius: 10px;
+}
+.about img{
+    /* float: left; */
+    width: 30rem;
+    height: auto;
+    position: relative;
+    left:30%;
+    top: 20%;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 10px 0px;
+    box-shadow: .5px .5px 5px 2px black;
+}
+.about .about-p p{
+    width: 40%;
+    float: right;
+    margin: 15rem 15rem 0rem 0rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.about .about-p p span{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+.skill-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 4rem;
+    position: relative;
+}
+.container label{
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    width: 15%;
+    height: 5rem;
+    position: relative;
+    top: 0;
+    left: 45%;
+}
+.skill-head{
+    box-shadow: .3px .3px 10px .6px blue;
+    border-radius: 10px;
+    padding: 10px;
+}
+.Edu-skill h2,.Tech-skill h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 4.3rem;
+}
+.skills{
+    width: 100%;
+    display: flex;
+}
+.Edu-skill{
+    width: 50%;
+    margin-top: 10rem;
+    float: left;
+    position: absolute;
+    left: 15%;
+}
+.Tech-skill{
+    width: 50%;
+    display: block;
+    margin-top: 10rem;
+    position: absolute;
+    left: 50%;
+}
+.skills #skill-head{
+    text-transform: uppercase;
+    color: blue;
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: absolute;
+    left: 5%;
+    width: 60%;
+}
+.progress-bar{
+    background-color: #959595;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+}
+.progress-bar div{
+    height: 10px;
+    width: 0%;
+    border-radius: 10px;
+}
+.progress-bar div span{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: white;
+    float: right;
+    margin-top: -15px;
+    margin-right:-20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.html{
+    background-color: blue;
+    animation: html 1s linear forwards;
+}
+.css{
+    background-color: red;
+    animation: css 1s linear forwards;
+}
+.javascript{
+    background-color: pink;
+    animation: JS 1s linear forwards;
+}
+.python{
+    background-color: yellow;
+    animation: python 1s linear forwards;
+}
+.c{
+    background-color: black;
+    animation: c 1s linear forwards;
+}
+.Solidity{
+    background-color: rgb(40, 182, 5);
+    animation: sol 1s linear forwards;
+}
+.yt-expert{
+    background-color: rgb(223, 0, 167);
+    animation: yt-expert 1s linear forwards;
+}
+.blogger{
+    background-color: rgb(255, 145, 0);
+    animation: blogger 1s linear forwards;
+}
+.SEO{
+    background-color: orangered;
+    animation: seo 1s linear forwards;
+}
+
+/* Radios color of % */
+.html span{
+    border: 1px solid red;
+}
+.css span{
+    border: 1px solid red;
+}
+.javascript  span{
+    border: 1px solid green;
+}
+.python span{
+    border: 1px solid blue;
+}
+.c span{
+    border: 1px solid yellow;
+}
+.Solidity span{
+    border: 1px solid purple;
+}
+.yt-expert span{
+    border: 1px solid peru;
+}
+.blogger span{
+    border: 1px solid rgb(0, 217, 255);
+}
+.SEO span{
+    border: 1px solid rgb(255, 0, 255);
+}
+
+/* skill progress bar animation */
+@keyframes html{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes JS{
+    100%{
+        width: 50%;
+    }
+}
+@keyframes python{
+    100%{
+        width: 50%;
+    }
+}
+@keyframes c{
+    100%{
+        width: 65%;
+    }
+}
+@keyframes sol{
+    100%{
+        width: 40%;
+    }
+}
+@keyframes yt-expert{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes blogger{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes seo{
+    100%{
+        width: 75%;
+    }
+}
+/* Project section css */
+.project{
+    margin-top: 4.5rem;
+    width: 100%;
+    height: 100vh;
+    padding-top: 10px;
+    background-color:lightgray;
+}
+.project div{
+    position: relative;
+    left: 10%;
+    margin-top: 3rem;
+    width: 30%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+#project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    position: relative;
+    left: 43%;
+    box-shadow: .3px .3px 10px .6px blue;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color:white;
+
+}
+.project img{
+    margin-right:2rem ;
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+    opacity: .5;
+}
+#sndimg{
+    height: 17.5rem;
+}
+.project div{
+    margin-bottom: 6rem;
+}
+.project div h2::first-letter{
+    font-size: 4rem;
+}
+.project div h2{
+    color: black;
+    font-size: 3rem;
+    position: absolute;
+    left: 15%;
+    font-weight: 500;
+}
+.project div img:hover{
+    box-shadow: .3px .3px 10px black ;
+    opacity: 1;
+}
+
+/* Contact us Page */
+.contact-us{
+    width: 100%;
+    height: 95vh;
+    margin-top: 6rem;
+    position: relative;
+}
+.contact-us label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    position: relative;
+    left: 43%;
+    box-shadow: .3px .3px 10px .6px blue;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color:white;
+}
+.left{
+    float: left;
+    width: 40%;
+    position: relative;
+    top: 10%;
+    left: 6%;
+}
+.left div{
+    margin-top: 5rem;
+}
+.left div i{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.left div p{
+    font-size: 2rem;
+}
+.right{
+    margin: 5rem 0rem 0rem 5rem;
+    display: inline-block;
+    width: 40%;
+}
+.right form{
+    max-width: 60rem;
+    height: 40rem;
+}
+.right form input{
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    width: 100%;
+    height: 3.5rem;
+}
+.right button{
+    font-size: 2rem;
+    width: 10rem;
+    height: 4rem;
+    border: .5px solid gray;
+    border-radius: 6px;
+    position: relative;
+    padding: 5px;
+    left: 45%;
+    margin-top: 2rem;
+    background-color: white;
+}
+.right textarea{
+    font-size: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+    height: 20rem;
+    border-radius: 3px;
+    border: 1px solid rgb(88, 87, 87);
+}
+.right button:hover{
+    box-shadow: .1px .1px 10px .3px blue;
+    transform:scale(0.9) rotate(3deg);
+}
+footer{
+    background-color: #959595;
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+}
+footer span{
+    margin-left: 2rem;
+    float: left;
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: white;
+}
+footer ul{
+    width: 100%;
+}
+footer ul li{
+    margin-top: 3.5rem;
+    display: inline-block;
+    margin-left: 10rem;
+}
+footer ul li a{
+    font-size: 2rem;
+}
+footer li a:hover{
+    border-radius: 5px;
+    box-shadow: .1px .1px 10px .3px white;
+}
